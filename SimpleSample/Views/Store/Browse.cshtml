@@ -1,0 +1,21 @@
+﻿@model SimpleSample.Models.Category
+
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browsing <i>@Model.CName</i> </h2>
+<hr />
+<ul>
+    @foreach (var product in Model.Products)
+    {
+        <li>
+            @Html.ActionLink(product.Name, "Details", new { id = product.ProductID})
+            @*<h3>@product.Name</h3>
+            <p>@product.Description</p>
+            <i>@product.Price</i>*@
+        </li>
+        
+    }
+</ul>
+

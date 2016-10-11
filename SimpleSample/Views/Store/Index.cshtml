@@ -1,0 +1,15 @@
+﻿@model IEnumerable <SimpleSample.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Browse categories</h2>
+<p> Select one of the @Model.Count() Categories: </p>
+<ul>
+    @foreach(var category in Model)
+    {
+        <li>@Html.ActionLink(category.CName, "Browse", new {category = category.CName } )</li>
+    }
+</ul>
+
