@@ -18,6 +18,10 @@ namespace SimpleSample.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
+        //private void MigrateShoppingCart(string username)
+        //{
+        //    var cart = ShoppingCart.GetCart(this.HttpContext);
+        //}
         public AccountController()
         {
         }

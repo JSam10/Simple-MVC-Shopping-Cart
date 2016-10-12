@@ -9,6 +9,6 @@ namespace SimpleSample.Models
     {
         public int CategoryID { get; set; }
         public string CName { get; set; }
-        public List<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
